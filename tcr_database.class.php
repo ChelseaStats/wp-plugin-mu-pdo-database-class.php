@@ -7,6 +7,7 @@ Plugin URI: http://thecellarroom.net
 Author: The Cellar Room Limited
 Author URI: http://www.thecellarroom.net
 Copyright (c) 2014 The Cellar Room Limited
+change
 */
 
 
