@@ -11,6 +11,3 @@ Example usage to get one row of data, with bind variable
     $row 	= $database->single();
     $name = $row[name];
     $dob  = $row[dob];
-
-
-step 2
