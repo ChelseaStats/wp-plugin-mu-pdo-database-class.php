@@ -13,7 +13,7 @@ Copyright (c) 2014 The Cellar Room Limited
 // Define configuration - ideally in your wp-config.
 define("PDO_HOST", "localhost");
 define("PDO_USER", "***");
-define("PDO_PASS", "***);
+define("PDO_PASS", "***");
 define("PDO_NAME", "***");
 
 
