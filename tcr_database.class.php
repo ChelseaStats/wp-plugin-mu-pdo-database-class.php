@@ -10,19 +10,13 @@
   Copyright (c) 2014 The Cellar Room Limited
  */
 
-
-// Define configuration - ideally in your wp-config.
-define("PDO_HOST", "localhost");
-define("PDO_USER", "***");
-define("PDO_PASS", "***");
-define("PDO_NAME", "***");
-
 class Database {
 
-    private $host = PDO_HOST;
-    private $user = PDO_USER;
-    private $pass = PDO_PASS;
-    private $dbname = PDO_NAME;
+    // uses the defined DB values in wp-config
+    private $host   = DB_HOST;
+    private $user   = DB_USER;
+    private $pass   = DB_PASS;
+    private $dbname = DB_NAME;
     private $dbh;
     private $error;
     private $stmt;
