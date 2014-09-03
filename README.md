@@ -2,7 +2,6 @@
 
 > A PDO database extraction layer as a mu-plugin for WP
 
-
 Example usage to get one row of data, with bind variable
 
     $database = new Database();
