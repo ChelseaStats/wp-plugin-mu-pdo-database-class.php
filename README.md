@@ -4,7 +4,7 @@
 
 ##### Why?
 
-sometimes in a WordPress theme (custom page template) you might want to access other database tables to do something non-wordpressy
+sometimes in a WordPress theme (custom page template) you might want to access other database tables to do something non-wordpressy.
 
 ##### How?
 
