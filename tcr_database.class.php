@@ -66,12 +66,12 @@ class Database {
         return $this->stmt->execute();
     }
 
-    public function resultset() {
+    public function rows() {
         $this->execute();
         return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function single() {
+    public function row() {
         $this->execute();
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
