@@ -15,6 +15,6 @@ This uses the default define in your `wp-config.php` to connect, it's then jsut 
     $database = new Database();
     $database->query('SELECT name, dob FROM `users` WHERE F_ID = :id');
     $database->bind(':id', $id);
-    $row 	= $database->single();
+    $row 	= $database->row();
     $name = $row[name];
     $dob  = $row[dob];
