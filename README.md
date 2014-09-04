@@ -18,3 +18,12 @@ This uses the default define in your `wp-config.php` to connect, it's then jsut 
     $row 	= $database->row();
     $name = $row[name];
     $dob  = $row[dob];
+    
+##### Example usage to get all rows of data
+
+    $database = new Database();
+    $database->query('SELECT name FROM `users`');
+    $rows 	= $database->rows();
+    foreach($rows as $row) {
+        print $row['name'] .'<br/>';
+    }
