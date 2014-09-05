@@ -15,7 +15,7 @@ class Database {
     // uses the defined DB values in wp-config
     private $host   = DB_HOST;
     private $user   = DB_USER;
-    private $pass   = DB_PASS;
+    private $pass   = DB_PASSWORD;
     private $dbname = DB_NAME;
     private $dbh;
     private $error;
