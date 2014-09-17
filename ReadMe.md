@@ -8,7 +8,7 @@ sometimes in a WordPress theme (custom page template) you might want to access o
 
 ##### How?
 
-This uses the default define in your `wp-config.php` to connect, it's then jsut a matter of using the class like the example below to do your work.
+This uses the default define in your `wp-config.php` to connect, it's then just a matter of using the class like the example below to do your work in your custom template or child themes etc.
 
 ##### Example usage to get one row of data, with bind variable
 
