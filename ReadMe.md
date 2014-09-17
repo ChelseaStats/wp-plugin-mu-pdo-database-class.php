@@ -12,7 +12,7 @@ This uses the default define in your `wp-config.php` to connect, it's then just 
 
 ##### Example usage to get one row of data, with bind variable
 
-    $database = new Database();
+    $database = new pdodb();
     $database->query('SELECT name, dob FROM `users` WHERE F_ID = :id');
     $database->bind(':id', $id);
     $row 	= $database->row();
@@ -21,7 +21,7 @@ This uses the default define in your `wp-config.php` to connect, it's then just 
     
 ##### Example usage to get all rows of data
 
-    $database = new Database();
+    $database = new pdodb();
     $database->query('SELECT name FROM `users`');
     $rows 	= $database->rows();
     foreach($rows as $row) {
