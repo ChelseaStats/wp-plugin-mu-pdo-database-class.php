@@ -10,7 +10,7 @@
   Copyright (c) 2014 The Cellar Room Limited
  */
 
-class Database {
+class pdodb {
 
     // uses the defined DB values in wp-config
     private $host   = DB_HOST;
