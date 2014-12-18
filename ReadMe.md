@@ -16,8 +16,8 @@ This uses the default define in your `wp-config.php` to connect, it's then just 
     $database->query('SELECT name, dob FROM `users` WHERE F_ID = :id');
     $database->bind(':id', $id);
     $row 	= $database->row();
-    $name = $row[name];
-    $dob  = $row[dob];
+    $name = $row['name'];
+    $dob  = $row['dob'];
     
 ##### Example usage to get all rows of data
 
