@@ -27,3 +27,32 @@ This uses the default define in your `wp-config.php` to connect, it's then just 
     foreach($rows as $row) {
         print $row['name'] .'<br/>';
     }
+    
+##### Example usage with try/catch for exceptions
+
+    try {
+    	$pdo = new pdodb();
+    	$pdo->query( 'INSERT INTO table (field1, field2) VALUES (:v1,:v2)' );
+    	$pdo->bind( ':v1', $v01 );
+    	$pdo->bind( ':v2', $v02 );
+    	
+    	$result = $pdo->execute();
+    
+    	$message1 = "1 record inserted: $v01 $v02";
+    	$message2 = "ID given: " . $pdo->lastInsertId();
+    
+    	print $go->goMessage( $message1, 'success' );
+    	print $go->goMessage( $message2, 'info' );
+    	print $go->getAnother( strtok( $_SERVER["REQUEST_URI"], '?' ), "Again" );
+    
+    } catch (PDOException $e) {
+    
+    	print $go->goMessage( "DB Error: The record could not be added.<br>".$e->getMessage(), 'error' );
+    	print $go->getAnother( strtok( $_SERVER["REQUEST_URI"], '?' ), "Again" );
+    
+    } catch (Exception $e) {
+    
+    	print $go->goMessage( "General Error: The record could not be added.<br>".$e->getMessage() , 'error');
+    	print $go->getAnother( strtok( $_SERVER["REQUEST_URI"], '?' ), "Again" );
+    
+    }
