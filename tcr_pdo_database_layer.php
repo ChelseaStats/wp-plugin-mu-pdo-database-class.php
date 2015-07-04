@@ -1,12 +1,11 @@
 <?php
-
 /*
   Plugin Name: TCR database PDO Class
   Description: Adds a basic PDO database abstraction layer for custom queries
-  Version: 1.0
-  Plugin URI: http://thecellarroom.net
+  Version: 1.0.0
+  Plugin URI: http://thecellarroom.uk
   Author: The Cellar Room Limited
-  Author URI: http://www.thecellarroom.net
+  Author URI: http://www.thecellarroom.uk
   Copyright (c) 2014 The Cellar Room Limited
  */
 
@@ -93,5 +92,3 @@ class pdodb {
     }
 
 }
-
-?>
